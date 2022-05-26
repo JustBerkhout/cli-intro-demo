@@ -1,0 +1,3 @@
+DROP STREAM IF EXISTS stream2;
+drop table IF EXISTS table1;
+drop stream IF EXISTS stream1;

@@ -1,0 +1,18 @@
+
+CREATE STREAM STREAM1 (
+    myval INT
+    ) 
+WITH ( 
+    KAFKA_TOPIC='demo-topic-1',
+    VALUE_FORMAT='JSON',
+    WRAP_SINGLE_VALUE=false 
+);
+
+CREATE TABLE TABLE1 
+AS 
+SELECT 
+    myval, 
+    count(*) mynum
+FROM STREAM1 
+GROUP BY 
+        myval;
