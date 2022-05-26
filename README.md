@@ -4,15 +4,19 @@
 confluent local services start
 ```
 
+Command Line Interface (CLI) based test and development
+will help with repeatable, scriptable development.
 
-To help with repeatable, scriptable development.
+This will help developers quickly learn to build tests, POCs 
+and demonstrations with increasing complexity while allowing to
+automate retpeatable tasks
 
-Allows code control
+It also allows code control (e.g. git) etc. 
 
 ## Installation/configuration
 * Confluent Platform
-* Kafka tools
-* `confluent` client
+* Kafka tools (included in Confluent Platform)
+* `confluent` client (https://docs.confluent.io/confluent-cli/current/install.html)
 
 ```bash
 which confluent
@@ -139,7 +143,6 @@ and reference it in the `--command.config` argument
 ```bash
 kafka-topics --bootstrap-server localhost:9092 --list --command.config myconfig.file
 ```
-
 
 
 
